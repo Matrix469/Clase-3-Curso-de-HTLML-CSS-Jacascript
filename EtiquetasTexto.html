@@ -3,49 +3,68 @@
   <head>
     <meta charset="utf-8" />
     <!--? Este meta es para que nuestra pagina se adapte a dispositivos móviles-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#09f" />
     <title>Etiquetas de texto</title>
     <!--? Enlazamiento con CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--? Enlazamiento a Javascript-->
-    <script src="javascript.js"> </script>
+    <script src="javascript.js"></script>
   </head>
-  <body>
+  <body style="margin: 0; padding:0;">
+    <header>
+      <nav style="top:0; width: 100%; height:60px; position:fixed; background-color: antiquewhite;"> <!--? Nav: una sección de navegación que contiene enlaces a otras
+         páginas o a secciones de la misma página.-->
+         <!--todo ese estilo no indica que ahora la lista esta pegada-->
+          <!--todo ese estilo no indica que ahora la lista esta pegada-->
+        <ul style="display: flex; list-style: none; justify-content: space-around;"> <!--todo Estilo para un lista-->
+          <li><a href="#tile">Inicio</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#learning">Temario</a></li>
+        </ul>
+      </nav>
+    </header>
     <!--? Titulos y subtitulos en orden-->
-    <h1>Curso html-css-Javascript</h1>
-    <p>Practica de repaso para html</p>
-    <h3>Habilidades que se aprenderan</h3>
+    <!--* Main es el-->
+    <main style="padding-top: 70px;">
+      <h1 id="title">Curso html-css-Javascript</h1>
+    </main>
+    <article>
+      <p>Practica de repaso para html</p>
+    </article>
+    <h3 id="skills">Habilidades que se aprenderan</h3>
     <ul>
       <li>Creción básica de un sitio web</li>
       <li>Diseño básico</li>
       <li>Elementos javascript</li>
     </ul>
-    <h4>Título 5</h4>
-    <h4>Título 5</h4>
-    <h6>Título 6</h6>
 
     <!--? Listas-->
     <!--todo Lista no ordenada-->
-    <h4>Listas</h4>
+    <h3 id="learnig">Temario</h3>
     <ul>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      <li>Elemento 3</li>
-      <li>Elemento 4</li>
+      <!--todo imagen-->
+      <!--! Combinación de imagen y link usando a-->
+      <li>HTML</li><a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer">
+      <img src="html.svg" alt="logo html" width="300px" height="auto"/></a>
+      <li>CSS</li>
+      <li>Javascript</li>
     </ul>
- 
+    <a href= "Perfil.webp" download="Imagen de Batmab"> Descargar aquí una imagen</a>
+    <a href= "Perfil.webp" upload="Imagen de Batmab"> Visualizar aquí una imagen</a>
     <!--todo Lista ordenada-->
-    <ol >
-      <li >Elemento 1</li>
+    <ol>
+      <li>Elemento 1</li>
     </ol>
     <ol type="a">
-      <li >Elemento con type</li>
+      <li>Elemento con type</li>
     </ol>
 
     <!--? Colocar enlaces a sitios web-->
     <!--todo para que nuestra pagiona no se direccione al dar click a link vamos usar el-->
     <!--*targen="bank_", para no mostrar información de más usamos rel=noopener noreferrer-->
-    <a href="https://www.youtube.com/watch?v=uyEUVgNMvGI" target="_blank" rel="noopener noreferrer">Configuraciones de visul studio code</a>
+    <a
+      href="https://www.youtube.com/watch?v=uyEUVgNMvGI"target="_blank" rel="noopener noreferrer"
+      >Configuraciones de visul studio code</a>
   </body>
 </html>

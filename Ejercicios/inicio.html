@@ -19,9 +19,19 @@
         </style>
     </head>
     <header>
-        
+        <h1>Proyectos</h1>
+        <nav style="top:0 ;width:100%;height:60px;">
+            <!--Display flex para que sea fila-->
+            <!--list style none es para no tener estilo en la lista-->
+            <!--justify-content: space-around justifica, centra y alinea nuestro titulos-->
+            <ul style="display: flex; list-style: none; justify-content: space-around;">
+            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px; text-align: center;" href="#metas">Metas</a></li>
+            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px; text-align: center;"href="#preguntas">Preguntas Frecuentes</a></li>
+            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px; text-align: center;"href="#formulario">Formulario de contacto</a></li>
+            </ul>
+        </nav>
         <!--? Recordatorio que le header es lo primero que ve el usuario-->
-        <h1>Ejercio </h1>
+        <h2>Ejercicios </h2>
         <h4>Ejercicio 3 </h4>
             <ul>
                 <h5>Completa el ejercicio</h5>
@@ -39,13 +49,54 @@
                 <li>Divide lo que creas interesante y relevante con "ul, ol"</li>
                 <li>Agrega 2 enlaces y enlázalo a un javascript y a un css</li>
             </ul>
+
+        <h4>Ejercicio 5 </h4>
+            <ul>
+                <h5>Completa el ejercicio</h5>
+                <li >En el archivo HTML creado en la clase anterior donde colocaste tu información básica </li>
+                <li>Agrega una imagen tuya, usando todos los atributos vistos en clases.</li>
+                <li>Con "a" agrega enlaces internos para moverte por tu página así como enlaces externos con target="_blank"</li>
+                <li>Con "a" agrega la descarga de un archivo que sea relevante usando una descripción clara del mismo</li>
+            </ul>
     </header>
     <body>
 
         <!--todo Atributos que puedo ingresar a un titulo como centrar el texto, colocar un borde y modificar el radio del borde-->
         <h1 style="background-color: aliceblue; text-align: center; border: 2px solid black; border-radius: 10px;">Quiroga Gómez Diego Eduardo</h1>
-        <p>Soy un Estudiante de ing en sistemas computacionales que esta haciendo una de sus primera practcias en html, mis pasatiempos ahora mismo son 
+        <p><img src="/batman.jpg" alt="Describe mi imagen, este imagen es de Batmna porque soy fan" width="50" height="50"> Soy un Estudiante de ing en sistemas computacionales que esta haciendo una de sus primera practcias en html, mis pasatiempos ahora mismo son 
             estudiar y practicar todo lo que es programción fronted y con programción backend.
-        </p>
+        <a href="Foto de perfil" download="/batman.jpg">Mi foto de perfil</a></p>
+
+        <h3 id="metas">Metas</h3>
+        <ul>
+        </ul>
+        <li>Terminar mi escuela de menera segura sin preocupaciones</li>
+        <li>Aprender confundidad y exactitulos los lenguajes de programción que me proponga.</li>
+        <li>Crar un portafolio decente para tener un buen perfil en mi trabajo</li>
+    
+        <section>
+            <h2 id="preguntas">Preguntas Frecuentes</h2>
+            <details><summary>¿Dónde Estudié</summary>
+            <p>Me encuentro estudianto en el instituto tecnologico del Estado de oaxaca</p></details>
+            <details><summary>¿Qué estudié</summary>
+            <p>Me encuentro estudiando la carrera de ing en sistemas computacionales </p></details>
+        </section>
+
+        <section>
+            <h2 id="formulario">Formulario de contacto</h2>
+            <form>
+                <fieldset>
+                    <legend >Información principal</legend>
+                    <div style= margin-block-start:10px;">
+                    <label id="name">Nombre
+                        <input type="text" placeholder="Colocar nombre" pattern="[A-Za-z/s]+">
+                    </label>
+                    </div>
+                    <div style="margin: 10px;"><label id="age">Edad <input type="number"> </label></div>
+                    <div><label id="tel">Telefono <input type="number"> </label></div>
+                </fieldset>
+            </form>
+        </section>
+
     </body>
 </html>
