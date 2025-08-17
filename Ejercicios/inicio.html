@@ -19,15 +19,15 @@
         </style>
     </head>
     <header>
-        <h1>Proyectos</h1>
-        <nav style="top:0 ;width:100%;height:60px;">
+        <h1 style="padding: 10px;">Proyectos</h1>
+        <nav style="top:0 ;width:100%;height:60px; background-color: azure;">
             <!--Display flex para que sea fila-->
             <!--list style none es para no tener estilo en la lista-->
             <!--justify-content: space-around justifica, centra y alinea nuestro titulos-->
-            <ul style="display: flex; list-style: none; justify-content: space-around;">
-            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px; text-align: center;" href="#metas">Metas</a></li>
-            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px; text-align: center;"href="#preguntas">Preguntas Frecuentes</a></li>
-            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px; text-align: center;"href="#formulario">Formulario de contacto</a></li>
+              <ul style="display:flex; list-style:none; justify-content: space-around; align-items: center; height:100%;">
+            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px;" href="#metas">Metas</a></li>
+            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px;"href="#preguntas">Preguntas Frecuentes</a></li>
+            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px;"href="#formulario">Formulario de contacto</a></li>
             </ul>
         </nav>
         <!--? Recordatorio que le header es lo primero que ve el usuario-->
@@ -87,16 +87,13 @@
             <form>
                 <fieldset>
                     <legend >Información principal</legend>
-                    <div style= margin-block-start:10px;">
-                    <label id="name">Nombre
-                        <input type="text" placeholder="Colocar nombre" pattern="[A-Za-z/s]+">
-                    </label>
-                    </div>
-                    <div style="margin: 10px;"><label id="age">Edad <input type="number"> </label></div>
-                    <div><label id="tel">Telefono <input type="number"> </label></div>
+                    <label id="name">Nombre<input style="height: 30px; width: 50%; margin: 10px;" type="text" placeholder="Colocar nombre" required pattern="[A-Za-z/s]+"></label> <br>  
+                    <label id="age">Edad <input style="height: 30px; width: 50%;margin: 10px" type="number" required> </label> <br>
+                    <label id="tel">Telefono <input  style="height: 30px; width: 50%;margin: 10px" type="tel"> </label> <br>
+                    <label id="enviar"><input type="submit"> </label><br>
                 </fieldset>
             </form>
         </section>
-
+       
     </body>
 </html>
