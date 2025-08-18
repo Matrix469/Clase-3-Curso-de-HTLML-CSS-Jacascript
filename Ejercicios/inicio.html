@@ -12,22 +12,18 @@
         <!--?Enlaces para css y js-->
         <link rel="stylesheet"  href="style.css">
         <script src="javascript.js"></script>
-        <style>
-            body{
-                background-color: bisque;
-            }
-        </style>
+        <!-- <style> body{ background-color: bisque;}</style> -->
     </head>
     <header>
         <h1 style="padding: 10px;">Proyectos</h1>
-        <nav style="top:0 ;width:100%;height:60px; background-color: azure;">
+        <nav id="lisnav" >
             <!--Display flex para que sea fila-->
             <!--list style none es para no tener estilo en la lista-->
             <!--justify-content: space-around justifica, centra y alinea nuestro titulos-->
-              <ul style="display:flex; list-style:none; justify-content: space-around; align-items: center; height:100%;">
-            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px;" href="#metas">Metas</a></li>
-            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px;"href="#preguntas">Preguntas Frecuentes</a></li>
-            <li><a style="border: 2px solid black; border-radius: 10px; padding: 10px 30px;"href="#formulario">Formulario de contacto</a></li>
+            <ul id="ul1">
+            <li><a class="a1" href="#metas">Metas</a></li>
+            <li><a class="a1" href="#preguntas">Preguntas Frecuentes</a></li>
+            <li><a class="a1" href="#formulario">Formulario de contacto</a></li>
             </ul>
         </nav>
         <!--? Recordatorio que le header es lo primero que ve el usuario-->
@@ -62,7 +58,7 @@
     <body>
 
         <!--todo Atributos que puedo ingresar a un titulo como centrar el texto, colocar un borde y modificar el radio del borde-->
-        <h1 style="background-color: aliceblue; text-align: center; border: 2px solid black; border-radius: 10px;">Quiroga Gómez Diego Eduardo</h1>
+        <h1 id="h1Name">Quiroga Gómez Diego Eduardo</h1>
         <p><img src="/batman.jpg" alt="Describe mi imagen, este imagen es de Batmna porque soy fan" width="50" height="50"> Soy un Estudiante de ing en sistemas computacionales que esta haciendo una de sus primera practcias en html, mis pasatiempos ahora mismo son 
             estudiar y practicar todo lo que es programción fronted y con programción backend.
         <a href="Foto de perfil" download="/batman.jpg">Mi foto de perfil</a></p>
@@ -82,18 +78,33 @@
             <p>Me encuentro estudiando la carrera de ing en sistemas computacionales </p></details>
         </section>
 
-        <section>
+<footer>
             <h2 id="formulario">Formulario de contacto</h2>
-            <form>
-                <fieldset>
-                    <legend >Información principal</legend>
-                    <label id="name">Nombre<input style="height: 30px; width: 50%; margin: 10px;" type="text" placeholder="Colocar nombre" required pattern="[A-Za-z/s]+"></label> <br>  
-                    <label id="age">Edad <input style="height: 30px; width: 50%;margin: 10px" type="number" required> </label> <br>
-                    <label id="tel">Telefono <input  style="height: 30px; width: 50%;margin: 10px" type="tel"> </label> <br>
-                    <label id="enviar"><input type="submit"> </label><br>
-                </fieldset>
-            </form>
-        </section>
-       
+    <form >
+    <fieldset id="fieldset1">
+        <legend><strong>Información principal</strong></legend> <br>
+        <label for="name">Nombre</label><br>
+        <input class="inputC" id="name" name="name" type="text" 
+               placeholder="Colocar nombre" 
+               required pattern="[A-Za-z\s]+" 
+               maxlength="40" 
+               ><br>  
+
+        <label for="age">Edad</label><br>
+        <input class="inputC" id="age" name="age" type="number" 
+               min="1" max="120" required 
+              ><br>
+
+        <label for="tel">Teléfono</label><br>
+        <input class="inputC" id="tel" name="tel" type="tel" 
+               placeholder="Ej: 555-123-4567"
+               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              ><br>
+
+        <button id="buttonC" type="submit">
+            Enviar</button>
+    </fieldset>
+    </form>
+       </footer>
     </body>
 </html>

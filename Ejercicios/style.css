@@ -1,0 +1,47 @@
+body {
+  background-color: bisque;
+}
+
+#lisnav {
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: azure;
+}
+#ul1 {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.a1 {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+#h1Name {
+  background-color: aliceblue;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgb(228, 223, 150);
+  border: solid rgb(122, 122, 226) 2px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+#fieldset1{
+     border: none;
+}
+.inputC {
+  height: 30px;
+  width: 50%;
+  margin: 10px;
+}
+#buttonC{
+height: 40px; width: 150px; margin: 10px;
+}

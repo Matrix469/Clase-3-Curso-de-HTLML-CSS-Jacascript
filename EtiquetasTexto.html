@@ -13,7 +13,7 @@
   </head>
   <body >
     <header>
-      <nav style="top:0; width: 100%; height:60px; position:fixed; background-color: antiquewhite;"> <!--? Nav: una sección de navegación que contiene enlaces a otras
+      <nav > <!--? Nav: una sección de navegación que contiene enlaces a otras
          páginas o a secciones de la misma página.-->
          <!--todo ese estilo no indica que ahora la lista esta pegada-->
           <!--todo ese estilo no indica que ahora la lista esta pegada-->
@@ -69,13 +69,14 @@
        <footer style="background-color: rgb(228, 223, 150); border: solid rgb(122, 122, 226) 2px; border-radius: 20px; padding-left: 20px ;">
             <form action="">
                 <h2>Información sobre el curso</h2>
-                <input type="text" name="nombre" placeholder="Diego Eduardo" required style="margin: 15px; height: 30px;  width:80%;">
+                <input class="inputs" type="text" name="nombre" placeholder="Diego Eduardo" required >
                 <br>
-                <input type="email" name="correo" placeholder="example@gmail.com" required style="margin: 15px; height: 30px; width:80%;">
+                <input class="inputs" type="email" name="correo" placeholder="example@gmail.com" required>
                 <br>
-                <input type="tel" name="Telefono" placeholder="xxx-xxx-xxx-xx" required style="margin: 15px;  height: 30px; width:80%;">
+                <input class="inputs" type="tel" name="Telefono" placeholder="xxx-xxx-xxx-xx" required style="margin: 15px;  height: 30px; width:80%;">
                 <br>
-                <input type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">  
+                <input id="inputsbutton" type="submit" value="Enviar">  
+                <!-- <input id="inputsbutton" type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">   -->
             </form> 
             <a style="margin-inline:30px;" href="https://www.udemy.com/course/desarrollo-web-con-html-css-y-javascript-desde-cero/learn/lecture/51204599#overview">Página</a>
         </footer>

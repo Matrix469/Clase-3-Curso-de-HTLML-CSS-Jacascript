@@ -1,0 +1,25 @@
+nav{
+    top:0; 
+    width: 100%; 
+    height:60px; 
+    position:fixed; 
+    background-color: rgb(226, 195, 155);
+}
+
+/*? Para algunos etiquetas que repiten podemo colocar class */
+/* llamos a la clases */
+.inputs{
+    margin: 15px; 
+    height: 30px;  
+    width:80%;
+}
+/* Llamos a al id del boton submi*/
+
+
+#inputsbutton{
+    margin:15px; 
+    height:30px; 
+    background-color:rgb(122, 122, 226); 
+    cursor: pointer; 
+    width:80%;
+}
