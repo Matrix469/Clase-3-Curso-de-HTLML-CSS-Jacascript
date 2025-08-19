@@ -1,11 +1,68 @@
+
+
+body{
+    top: 0;
+    margin: 0;
+    color: rgb(45, 53, 53);
+}
+main{
+   padding-top: 70px;
+}
 nav{
-    top:0; 
+    top:0;    
     width: 100%; 
     height:60px; 
     position:fixed; 
     background-color: rgb(226, 195, 155);
+
 }
 
+article{
+    /* si quiero que aplique a uno solo */
+    p,a{
+        color:rgb(88, 171, 234); ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p{
+        font-size: 1.2rem;
+     /*? estilos para párrafos dentro de article */
+
+    }
+    a{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+       /* rem es reposponsivo segun el tamaño de la pantalla
+     /*? estilos para enlaces dentro de article */
+    }
+}
+
+a{
+    text-decoration:double;
+    color: rgb(7, 117, 39);
+    font-weight: 200;
+}
+.a1{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+}
+#afooter{
+    margin-inline:30px;
+}
+
+#ul1{
+    display: flex; list-style: none; justify-content: space-around; 
+}
+
+h1{
+    color: blue;
+}
+#learnig{
+    color: brown;
+    text-align: center;
+}
 /*? Para algunos etiquetas que repiten podemo colocar class */
 /* llamos a la clases */
 .inputs{
@@ -14,12 +71,36 @@ nav{
     width:80%;
 }
 /* Llamos a al id del boton submi*/
-
-
 #inputsbutton{
     margin:15px; 
     height:30px; 
     background-color:rgb(122, 122, 226); 
     cursor: pointer; 
     width:80%;
+}
+
+
+img {
+  width: 200px;
+  height: 200px;
+  /*! object-fit: cover; Este atributo puede cortar la imagen para que no se deforme*/
+}
+
+/*todo Seleccionamos nuestro div que esta cerca de la iamgenes*/
+#modelo{
+    display:flex ;
+    /*? estilos para la imagen dentro de figure dentro de un div */
+  figure  {
+    /** podemos colocar estilo en nuestro figure */
+    img{
+      margin: 10px;
+      padding: 10px;
+      border: black 2px solid;
+      border-radius: 25px;  
+    }
+  }
+}
+
+footer{
+  background-color: rgb(228, 223, 150); border: solid rgb(122, 122, 226) 2px; border-radius: 20px; padding-left: 20px ;
 }

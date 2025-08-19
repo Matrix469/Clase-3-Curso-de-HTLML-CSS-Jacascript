@@ -17,16 +17,16 @@
          páginas o a secciones de la misma página.-->
          <!--todo ese estilo no indica que ahora la lista esta pegada-->
           <!--todo ese estilo no indica que ahora la lista esta pegada-->
-        <ul style="display: flex; list-style: none; justify-content: space-around;"> <!--todo Estilo para un lista-->
-          <li><a href="#tile">Inicio</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#learning">Temario</a></li>
+        <ul id="ul1">
+          <li><a class="a1" href="#title">Inicio</a></li>
+          <li><a class="a1" href="#skills">Habilidades</a></li>
+          <li><a class="a1" href="#learnig">Temario</a></li>
         </ul>
       </nav>
     </header>
     <!--? Titulos y subtitulos en orden-->
     <!--* Main es el-->
-    <main style="padding-top: 70px;">
+    <main>
       <h1 id="title">Curso html-css-Javascript</h1>
     </main>
     <article>
@@ -42,14 +42,29 @@
     <!--? Listas-->
     <!--todo Lista no ordenada-->
     <h3 id="learnig">Temario</h3>
-    <ul>
+    <ol>
+      <!--? El div es un contenedor -->
+      <div id="modelo"> 
       <!--todo imagen-->
       <!--! Combinación de imagen y link usando a-->
-      <li>HTML</li><a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer">
-      <img src="html.svg" alt="logo html" width="300px" height="auto"/></a>
+      <li>HTML</li>
+      <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer">
+       <!-- ? figure caption es un pequeña descripción -->
+        <figure>
+        <img src="imagen/HTMLlogo.png" alt="logo html" width="300px" height="auto"/>
+        <figcaption>Lenguaje HTML</figcaption>
+      </figure>
+      </a>
       <li>CSS</li>
+        <figure><img src="imagen/CSSlogo.png" alt="logo html" width="250px" height="auto">
+        <figcaption>Lenguaje CSS</figcaption>
+      </figure>
       <li>Javascript</li>
-    </ul>
+      <figure><img src="imagen/JSlogo.webp" alt="logo html" width="300px" height="auto">
+      <figcaption>Lenguaje JS</figcaption>
+      </figure>
+      </div>
+    </ol>
     <a href= "Perfil.webp" download="Imagen de Batmab"> Descargar aquí una imagen</a>
     <a href= "Perfil.webp" upload="Imagen de Batmab"> Visualizar aquí una imagen</a>
     <!--todo Lista ordenada-->
@@ -66,7 +81,7 @@
     <a
       href="https://www.youtube.com/watch?v=uyEUVgNMvGI"target="_blank" rel="noopener noreferrer"
       >Configuraciones de visul studio code</a>
-       <footer style="background-color: rgb(228, 223, 150); border: solid rgb(122, 122, 226) 2px; border-radius: 20px; padding-left: 20px ;">
+       <footer >
             <form action="">
                 <h2>Información sobre el curso</h2>
                 <input class="inputs" type="text" name="nombre" placeholder="Diego Eduardo" required >
@@ -78,7 +93,7 @@
                 <input id="inputsbutton" type="submit" value="Enviar">  
                 <!-- <input id="inputsbutton" type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">   -->
             </form> 
-            <a style="margin-inline:30px;" href="https://www.udemy.com/course/desarrollo-web-con-html-css-y-javascript-desde-cero/learn/lecture/51204599#overview">Página</a>
+            <a id="afooter" href="https://www.udemy.com/course/desarrollo-web-con-html-css-y-javascript-desde-cero/learn/lecture/51204599#overview">Página</a>
         </footer>
   </body>
 </html>
