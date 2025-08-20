@@ -1,9 +1,8 @@
 body {
   background-color: rgb(167, 165, 163);
   margin: 0;
-  font-weight:400;
+  font-weight: 400;
   top: 0;
-  
 }
 
 #lisnav {
@@ -13,7 +12,7 @@ body {
   /* position: sticky; */
   position: sticky;
   /*todo este asegura que este por encima de otro elemento */
-  z-index: 1000; 
+  z-index: 1000;
 }
 #ul1 {
   display: flex;
@@ -22,7 +21,7 @@ body {
   align-items: center;
   height: 100%;
 }
-a{
+a {
   text-decoration: none;
   color: rgb(105, 98, 35);
   font-weight: bold;
@@ -33,7 +32,7 @@ a{
   padding: 10px 30px;
 }
 
-h1{
+h1 {
   text-align: center;
   background-color: black;
   color: white;
@@ -50,7 +49,7 @@ h1{
   width: 80%;
   margin: auto;
 }
-h4{
+h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: blue;
@@ -58,8 +57,8 @@ h4{
   margin: 15px;
 }
 
-#fieldset1{
-     border: none;
+#fieldset1 {
+  border: none;
 }
 .inputC {
   height: 30px;
@@ -67,35 +66,35 @@ h4{
   margin: 10px;
   background-color: rgb(221, 214, 88);
 }
-#picture{
+#picture {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin: auto;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
 
   padding: 20px;
-  border-radius: 15px; 
-  gap: 50px; 
+  border-radius: 15px;
+  gap: 50px;
   row-gap: 10px;
 
   background-color: rgb(159, 137, 104);
   width: 90%;
   padding: 20px;
 
-  figure{
-    flex-direction:row;
+  figure {
+    flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
     align-content: center;
-    
+
     /*? Efecto al pasar el mouse */
     &:hover {
-    transform: scale(1.50); 
-    cursor: grab;
-  }
-    img{
+      transform: scale(1.5);
+      cursor: grab;
+    }
+    img {
       width: 50px;
       height: 50px;
       /* object-fit: cover; */
@@ -112,18 +111,39 @@ h4{
   }
 }
 
-#buttonC{
-height: 40px; width: 150px; margin: 10px;
-background-color: rgb(109, 37, 37);
-color: white;
+#buttonC {
+  height: 40px;
+  width: 150px;
+  margin: 10px;
+  background-color: rgb(109, 37, 37);
+  color: white;
 }
-#formulario{
-  color:rgb(220, 220, 220);
+#formulario {
+  color: rgb(220, 220, 220);
   font-weight: bold;
   font-size: 25px;
+}
+
+#div1 {
+  display: grid;
+  grid-template-columns: 4fr 1fr; /* 2 columnas iguales */
+  grid-template-rows: 4fr 4fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  #div2 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  #div3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
   
   
 }
+
 footer {
   background-color: rgb(58, 80, 49);
   border: solid rgb(122, 122, 226) 2px;

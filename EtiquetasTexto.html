@@ -11,12 +11,13 @@
     <!--? Enlazamiento a Javascript-->
     <script src="javascript.js"></script>
   </head>
-  <body >
+  <body>
     <header>
-      <nav > <!--? Nav: una sección de navegación que contiene enlaces a otras
+      <nav>
+        <!--? Nav: una sección de navegación que contiene enlaces a otras
          páginas o a secciones de la misma página.-->
-         <!--todo ese estilo no indica que ahora la lista esta pegada-->
-          <!--todo ese estilo no indica que ahora la lista esta pegada-->
+        <!--todo ese estilo no indica que ahora la lista esta pegada-->
+        <!--todo ese estilo no indica que ahora la lista esta pegada-->
         <ul id="ul1">
           <li><a class="a1" href="#title">Inicio</a></li>
           <li><a class="a1" href="#skills">Habilidades</a></li>
@@ -29,44 +30,60 @@
     <main>
       <h1 id="title">Curso html-css-Javascript</h1>
     </main>
-    <article>
-      <p>Practica de repaso para html</p>
-    </article>
-    <h3 id="skills">Habilidades que se aprenderan</h3>
-    <ul>
-      <li>Creción básica de un sitio web</li>
-      <li>Diseño básico</li>
-      <li>Elementos javascript</li>
-    </ul>
-
+    <div id="home">
+      <div id="home1">
+        <h3 class="divhome">¿Aquien va dirigido?</h3>
+        <article>
+          <p>Practica de repaso para html</p>
+        </article>
+      </div>
+      <div id="home2">
+      <h3 class="divhome" id="skills">Habilidades que se aprenderan</h3>
+      <ul>
+        <li class="divhome">Creción básica de un sitio web</li>
+        <li class="divhome">Diseño básico</li>
+        <li class="divhome">Elementos javascript</li>
+      </ul>
+      </div>
+    </div>
     <!--? Listas-->
     <!--todo Lista no ordenada-->
     <h3 id="learnig">Temario</h3>
     <ol>
       <!--? El div es un contenedor -->
-      <div id="modelo"> 
-      <!--todo imagen-->
-      <!--! Combinación de imagen y link usando a-->
-      <li>HTML</li>
-      <a href="https://es.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer">
-       <!-- ? figure caption es un pequeña descripción -->
+      <div id="modelo">
+        <!--todo imagen-->
+        <!--! Combinación de imagen y link usando a-->
+        <li>HTML</li>
+        <a
+          href="https://es.wikipedia.org/wiki/HTML"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <!-- ? figure caption es un pequeña descripción -->
+          <figure>
+            <img src="imagen/HTMLlogo.png" alt="logo html" />
+            <figcaption>Lenguaje HTML</figcaption>
+          </figure>
+        </a>
+        <li>CSS</li>
         <figure>
-        <img src="imagen/HTMLlogo.png" alt="logo html"/>
-        <figcaption>Lenguaje HTML</figcaption>
-      </figure>
-      </a>
-      <li>CSS</li>
-        <figure><img src="imagen/CSSlogo.png" alt="logo html">
-        <figcaption>Lenguaje CSS</figcaption>
-      </figure>
-      <li>Javascript</li>
-      <figure><img src="imagen/JSlogo.webp" alt="logo html">
-      <figcaption>Lenguaje JS</figcaption>
-      </figure>
+          <img src="imagen/CSSlogo.png" alt="logo html" />
+          <figcaption>Lenguaje CSS</figcaption>
+        </figure>
+        <li>Javascript</li>
+        <figure>
+          <img src="imagen/JSlogo.webp" alt="logo html" />
+          <figcaption>Lenguaje JS</figcaption>
+        </figure>
       </div>
     </ol>
-    <a href= "Perfil.webp" download="Imagen de Batmab"> Descargar aquí una imagen</a>
-    <a href= "Perfil.webp" upload="Imagen de Batmab"> Visualizar aquí una imagen</a>
+    <a href="Perfil.webp" download="Imagen de Batmab">
+      Descargar aquí una imagen</a
+    >
+    <a href="Perfil.webp" upload="Imagen de Batmab">
+      Visualizar aquí una imagen</a
+    >
     <!--todo Lista ordenada-->
     <ol>
       <li>Elemento 1</li>
@@ -79,21 +96,47 @@
     <!--todo para que nuestra pagiona no se direccione al dar click a link vamos usar el-->
     <!--*targen="bank_", para no mostrar información de más usamos rel=noopener noreferrer-->
     <a
-      href="https://www.youtube.com/watch?v=uyEUVgNMvGI"target="_blank" rel="noopener noreferrer"
-      >Configuraciones de visul studio code</a>
-       <footer >
-            <form action="">
-                <h2>Información sobre el curso</h2>
-                <input class="inputs" type="text" name="nombre" placeholder="Diego Eduardo" required >
-                <br>
-                <input class="inputs" type="email" name="correo" placeholder="example@gmail.com" required>
-                <br>
-                <input class="inputs" type="tel" name="Telefono" placeholder="xxx-xxx-xxx-xx" required style="margin: 15px;  height: 30px; width:80%;">
-                <br>
-                <input id="inputsbutton" type="submit" value="Enviar">  
-                <!-- <input id="inputsbutton" type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">   -->
-            </form> 
-            <a id="afooter" href="https://www.udemy.com/course/desarrollo-web-con-html-css-y-javascript-desde-cero/learn/lecture/51204599#overview">Página</a>
-        </footer>
+      href="https://www.youtube.com/watch?v=uyEUVgNMvGI"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Configuraciones de visul studio code</a
+    >
+    <footer>
+      <form action="">
+        <h2>Información sobre el curso</h2>
+        <input
+          class="inputs"
+          type="text"
+          name="nombre"
+          placeholder="Diego Eduardo"
+          required
+        />
+        <br />
+        <input
+          class="inputs"
+          type="email"
+          name="correo"
+          placeholder="example@gmail.com"
+          required
+        />
+        <br />
+        <input
+          class="inputs"
+          type="tel"
+          name="Telefono"
+          placeholder="xxx-xxx-xxx-xx"
+          required
+          style="margin: 15px; height: 30px; width: 80%"
+        />
+        <br />
+        <input id="inputsbutton" type="submit" value="Enviar" />
+        <!-- <input id="inputsbutton" type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">   -->
+      </form>
+      <a
+        id="afooter"
+        href="https://www.udemy.com/course/desarrollo-web-con-html-css-y-javascript-desde-cero/learn/lecture/51204599#overview"
+        >Página</a
+      >
+    </footer>
   </body>
 </html>
