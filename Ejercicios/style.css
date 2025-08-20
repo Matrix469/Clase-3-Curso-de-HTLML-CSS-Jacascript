@@ -2,6 +2,8 @@ body {
   background-color: rgb(167, 165, 163);
   margin: 0;
   font-weight:400;
+  top: 0;
+  
 }
 
 #lisnav {
@@ -45,6 +47,15 @@ h1{
   text-align: center;
   border: 2px solid black;
   border-radius: 10px;
+  width: 80%;
+  margin: auto;
+}
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: blue;
+  text-decoration: solid;
+  margin: 15px;
 }
 
 #fieldset1{
@@ -58,15 +69,45 @@ h1{
 }
 #picture{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  justify-content:center;
+  align-content: center;
+
+  padding: 20px;
+  border-radius: 15px; 
+  gap: 50px; 
+  row-gap: 10px;
+
+  background-color: rgb(159, 137, 104);
+  width: 90%;
+  padding: 20px;
+
   figure{
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    
+    /*? Efecto al pasar el mouse */
+    &:hover {
+    transform: scale(1.50); 
+    cursor: grab;
+  }
     img{
       width: 50px;
       height: 50px;
       /* object-fit: cover; */
+      background-color: rgb(187, 195, 240);
       margin: 10px;
       padding: 10px;
       border: black 2px solid;
       border-radius: 25px;
+      /* da un sombra */
+      box-shadow: 0 0px 20px 20px rgba(38, 41, 223, 0.2);
+      /*? box-shadow: offset-x offset-y blur-radius spread-radius color;
+ */
     }
   }
 }
@@ -79,6 +120,8 @@ color: white;
 #formulario{
   color:rgb(220, 220, 220);
   font-weight: bold;
+  font-size: 25px;
+  
   
 }
 footer {
@@ -86,4 +129,5 @@ footer {
   border: solid rgb(122, 122, 226) 2px;
   border-radius: 20px;
   padding-left: 20px;
+  font-size: 15px;
 }
