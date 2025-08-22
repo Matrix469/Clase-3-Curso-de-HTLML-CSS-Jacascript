@@ -38,7 +38,16 @@ article {
 a {
   text-decoration: double;
   color: rgb(7, 117, 39);
-  font-weight: 200;
+  /**Transición */
+  font-weight: bold;
+  transition: transform 0.4 ease transform 0.4s ease-in-out;
+  display: inline-block;
+}
+/**Transición */
+a:hover {
+  transform: scale(1.1);
+  color: black;
+  font-weight: bold;
 }
 .a1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -59,25 +68,21 @@ a {
 h1 {
   color: rgb(65, 65, 167);
 }
-#learnig {
+
+h3 {
+  /**La animación empieza lenta, acelera en medio, y termina lenta. */
+  transition: transform 0.5s ease-in-out;
+}
+
+h3:hover {
+  transform: rotate3d(1, 1, 1, 10deg) scale(1.1);
+}
+/* #learnig {
   color: brown;
   text-align: center;
-}
+} */
 /*? Para algunos etiquetas que repiten podemo colocar class */
 /* llamos a la clases */
-.inputs {
-  margin: 15px;
-  height: 30px;
-  width: 80%;
-}
-/* Llamos a al id del boton submi*/
-#inputsbutton {
-  margin: 15px;
-  height: 30px;
-  background-color: rgb(122, 122, 226);
-  cursor: pointer;
-  width: 80%;
-}
 
 img {
   width: 200px;
@@ -150,8 +155,31 @@ img {
     align-content: center;
     box-shadow: 2px 2px 5px black;
   }
-  .divhome{
-    font-family: 'Courier New', Courier, monospace;
+  .divhome {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    transition: background-color 0.6s ease, transform 0.6s ease-in-out;
+  }
+  .item1:hover,
+  .item2:hover,
+  .item3:hover {
+    font-weight: bold;
+  }
+  .item1:hover {
+    color: green;
+    transform: translateX(20px);
+  }
+  .item2:hover {
+    color: blue;
+    transform: translateX(-20px);
+  }
+  .item3:hover {
+    color: red;
+    transform: translateY(20px);
   }
 }
 
@@ -159,7 +187,14 @@ footer {
   background-color: rgb(228, 223, 150);
   border: solid rgb(122, 122, 226) 2px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px;
+
+  h2 {
+    transition: transform 0.4s ease-in-out;
+  }
+  h2:hover {
+    transform: scale(1.1);
+  }
   /*
   .inpust{
   margin:15px;
@@ -167,4 +202,34 @@ footer {
   wigth:80%  
   }
   */
+
+  .inputs {
+    margin: 15px;
+    height: 30px;
+    width: 80%;
+  }
+
+  .inputs:hover {
+    border: black 5px solid;
+    /*? Efecto 3D */
+    box-shadow: 2px 2px 5px black, inset -2px -2px 5px blue;
+  }
+  /* Llamos a al id del boton submi*/
+  #inputsbutton {
+    margin: 15px;
+    height: 30px;
+
+    background-color: rgb(122, 122, 226);
+    cursor: pointer;
+    width: 80%;
+  }
+
+  #inputsbutton:hover{
+        box-shadow: 2px 2px 5px black, inset -2px -2px 5px blue;
+        transform: scale(1.05);
+        filter: brightness(1.2);
+  }
+  a{
+    float: right;
+  }
 }
