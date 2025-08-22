@@ -20,18 +20,29 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+
+  .a1 {
+  border: 0.2rem solid black;
+  border-radius: 10px;
+  padding: 10px 30px;
+  }
+
+  .t1,.t2,.t3{
+    transition: ease-in-out 0.3s;
+  }
+  .t1:hover, .t2:hover, .t3:hover {
+    color: rgb(46, 103, 147);
+    font-weight: bold;
+    transform: scale(1.1);
+    padding: 20px 40px;
+  }
 }
+
 a {
   text-decoration: none;
   color: rgb(105, 98, 35);
   font-weight: bold;
 }
-.a1 {
-  border: 0.2rem solid black;
-  border-radius: 10px;
-  padding: 10px 30px;
-}
-
 
 .e2, .e1{
   transition: -5 ease-out;
@@ -47,7 +58,6 @@ a {
   font-size: 50px;
 }
 
-
 #h1Inicio{
   text-align: center;
   background-color: black;
@@ -59,12 +69,11 @@ a {
 .h2grup{
   padding: 20px;
   margin: 10px;
-  transition: .1s ease-out;
+  transition: 1.1s ease-out;
 }
-.g1:hover,.g2:hover,.g3:hover{
+.g1:hover,.g2:hover,.g3:hover,.g4:hover{
   transform: translateX(20px);
 }
-
 .g1:hover{
   color: green;
 }
@@ -73,6 +82,10 @@ a {
 }
 .g3:hover{
   color: red;
+}
+.g4:hover{
+  color: purple;
+  transform: translate(20px, 20px);
 }
 #h2Name {
   background-color: aliceblue;
@@ -106,6 +119,11 @@ h4 {
   width: 50%;
   margin: 10px;
   background-color: rgb(221, 214, 88);
+  transition: ease-out 0.1s;
+}
+.inputC:hover{
+  background-color: white;
+  transform: translateX(5px);
 }
 #picture {
   display: flex;
@@ -143,7 +161,7 @@ h4 {
       /* da un sombra */
       box-shadow: 0 0px 20px 20px rgba(38, 41, 223, 0.2);
       /* /*? box-shadow: offset-x offset-y blur-radius spread-radius color; */
-      transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; 
     }
     img:hover{
       transform: scale(1.1);
@@ -196,8 +214,10 @@ p{
   transition: 1.2 ease;
 }
 
-#buttonC:haver{
-  
+#buttonC:hover{
+
+  border: salid 2px black;
+  box-shadow: 2px 2px 5px black;
 }
 #formulario {
   color: rgb(220, 220, 220);
@@ -237,12 +257,46 @@ p{
   #div7{
     grid-column: 3/4;
     grid-row:3/5 ;
+    
   }
   .divText{
     font-family: Arial, Helvetica, sans-serif;
     text-align:justify ;
+    transition: -1s ease;
   }
-  
+  .ex1:hover{
+    transform: scale(1.1);
+    background-color: rgb(221, 214, 88);
+  }
+  .ex2:hover{
+    transform: scale(1.1);
+    background-color: rgb(128, 221, 88);
+  }
+  .ex3:hover{
+    transform: scale(1.1);
+    background-color: rgb(88, 221, 146);
+  }
+  .ex4:hover{
+    transform: scale(1.1);
+    background-color: rgb(49, 88, 231);
+  }
+  .ex5:hover{
+    transform: scale(1.1);
+    background-color: rgb(49, 176, 231);
+  }
+  .ex6:hover{
+    transform: scale(1.1);
+    background-color: rgb(226, 27, 166);
+  }
+
+  .ejerc{
+    transition: -10s ease-in;
+  }
+
+  .ej1:hover,.ej2:hover,.ej3:hover,.ej4:hover,.ej5:hover,.ej6:hover,.ej7:hover{
+    transform: rotate(10deg);
+  }
+    
 }
 
 footer {

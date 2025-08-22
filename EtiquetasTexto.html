@@ -105,15 +105,19 @@
     <footer>
       <form action="">
         <h2>Información sobre el curso</h2>
-        <input
+        <label for="nombre">Nombre del interesado</label>
+          <input
+          id="nombre"
           class="inputs"
           type="text"
           name="nombre"
           placeholder="Diego Eduardo"
-          required
+          required pattern="[A-Za-z+ÁÉÍÓÚáéíóú\s]+"
+          title="solo letras y espacios"
         />
         <br />
-        <input
+        <label for="correo">Correo Elestronico</label><input
+          id="correo"
           class="inputs"
           type="email"
           name="correo"
@@ -121,14 +125,23 @@
           required
         />
         <br />
-        <input
+        <label for="telefono">Ingresar su numero de telefono</label><input
+          id="telefono"
           class="inputs"
           type="tel"
           name="Telefono"
           placeholder="xxx-xxx-xxx-xx"
-          required
-          style="margin: 15px; height: 30px; width: 80%"
+          required 
         />
+        <br />
+        <label for="comentarios">Deje sus comentarios</label>
+        <textarea 
+        id="comentarios" 
+        type="text"
+        name="comentarios"
+        class="inputs" 
+        type="text" 
+        placeholder="Dejar comentarios"></textarea>/>
         <br />
         <input id="inputsbutton" type="submit" value="Enviar" />
         <!-- <input id="inputsbutton" type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">   -->
