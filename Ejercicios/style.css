@@ -120,6 +120,18 @@ h4 {
   margin: 10px;
   background-color: rgb(221, 214, 88);
   transition: ease-out 0.1s;
+  transition: background-color 0.5s ease, transform 0.5s ease-in-out;
+}
+/**Modificar un atributo de una etiqueta*/
+.inputC::placeholder {
+  color: rgb(39, 38, 38);
+  opacity: 0.8;
+}
+.inputC:focus:invalid{
+  background-color: chocolate;
+}
+.inputC:focus:valid{
+  background-color: lightgreen;
 }
 .inputC:hover{
   background-color: white;
@@ -212,6 +224,9 @@ p{
   background-color: rgb(109, 37, 37);
   color: white;
   transition: 1.2 ease;
+  border-radius: 10px;
+  cursor: pointer;
+
 }
 
 #buttonC:hover{
@@ -305,4 +320,101 @@ footer {
   border-radius: 20px;
   padding-left: 20px;
   font-size: 15px;
+}
+
+/**ANIMACIONES  */
+
+@keyframes mover {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes aparecer{
+  from{
+    filter: blur(10px);
+  }
+  to{
+    filter: blur(0px);
+  }
+}
+
+@keyframes mover2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotar{
+  0%{
+    transform: rotateX(0deg);
+  }
+  50%{
+    transform: rotateX(90deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes aparecerDesaparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes colores {
+  0% {
+    background-color: rgb(211, 218, 119);
+  }
+  50% {
+    background-color: rgb(129, 86, 43);
+  }
+  100% {
+    background-color: rgb(36, 144, 38);
+  }
+}
+
+
+#h1Inicio{
+  animation: mover 2.5s ease-in-out;
+  animation-duration: 1s;
+}
+
+#lisnav, .divText{
+  animation: aparecer 1.5s ease, mover2 2.5s ease-in-out;
+  animation-delay: 0s;
+}
+
+.divText{
+  animation: colores 3s ease-in-out infinite,aparecer 1.5s ease, mover2 2.5s ease-in-out;
+  animation-delay: 1.5s;
+}
+.divText:hover{
+  animation: none;
+}
+/* 
+?aparecer empieza de inmediato (0s)
+?mover2 empieza después de 1.5 segundos
+*/
+
+img{
+  animation: rotar 2s linear infinite;
+}
+img:hover{
+  animation: none;;
 }

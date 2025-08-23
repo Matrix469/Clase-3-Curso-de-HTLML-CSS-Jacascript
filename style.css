@@ -85,8 +85,8 @@ h3:hover {
 /* llamos a la clases */
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   /*! object-fit: cover; Este atributo puede cortar la imagen para que no se deforme*/
   object-fit: cover;
 }
@@ -113,6 +113,7 @@ img {
     flex-direction: column;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
     background-color: rgb(55, 50, 205);
     /** podemos colocar estilo en nuestro figure */
     img {
@@ -207,29 +208,109 @@ footer {
     margin: 15px;
     height: 30px;
     width: 80%;
+    transition: background-color 0.5s ease, transform 0.5s ease-in-out;
   }
 
   .inputs:hover {
-    border: black 5px solid;
+    border: black 1px solid;
     /*? Efecto 3D */
-    box-shadow: 2px 2px 5px black, inset -2px -2px 5px blue;
+    box-shadow: 1px 1px black, inset -2px -2px 5px blue;
   }
   /* Llamos a al id del boton submi*/
   #inputsbutton {
     margin: 15px;
     height: 30px;
-
     background-color: rgb(122, 122, 226);
     cursor: pointer;
     width: 80%;
   }
 
-  #inputsbutton:hover{
-        box-shadow: 2px 2px 5px black, inset -2px -2px 5px blue;
-        transform: scale(1.05);
-        filter: brightness(1.2);
+  #inputsbutton:hover {
+    box-shadow: 2px 2px 5px black, inset -2px -2px 5px blue;
+    transform: scale(1.05);
+    filter: brightness(1.2);
   }
-  a{
+  a {
     float: right;
   }
+  /*? Validad los campos antes de ser enviados */
+  /* su contenido es válido según las reglas */
+  .inputs:focus:invalid {
+    background-color: rgb(217, 178, 178);
+  }
+  /*? Validar los campos antes de ser enviandos */
+  /*su contenido no cumple con las reglas de validación.*/
+  .inputs:focus:valid {
+    background-color: rgb(138, 186, 149);
+  }
+
+  textarea.inputs {
+    height: 5em;
+    font-family: inherit;
+  }
 }
+/** :hiver, :invalid, :valid, focus cada uno hace una acción cuando ocurre algo con ese elemento  */
+
+/*TODO Animaciones avanzadas */
+/* 
+*Usadas para creaar efectos visuales complejos y dinámicos en elementos web.
+*Pueden ser usadas en transiciones, transformaciones y animaciones.
+*Permiten definir cambios en las propiedades CSS de un elemento a lo largo del tiempo.
+*/
+/*? permite crear animaciones personalizadas */
+@keyframes aparecer {
+  from {
+    /*iniciar en 0.5*/
+    filter: blur(0.5rem);
+  }
+
+  /* ira hacia*/
+  to {
+    filter: blur(0);
+  }
+}
+
+@keyframes mover {
+  from {
+    opaceity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 3;
+    transform: translateY(0px);
+  }
+}
+@keyframes rotar {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+#title,
+#modelo,
+footer,
+#learnig {
+  animation: aparecer 2.5s ease-in, aparecer 3s ease-in-out;
+}
+
+#home,
+#modelo,
+footer,
+#learnig {
+  animation: mover 2.5s ease-in;
+}
+
+img {
+  animation: rotar 2s linear infinite;
+}
+
+img:hover {
+  animation: none;
+}
+
+
