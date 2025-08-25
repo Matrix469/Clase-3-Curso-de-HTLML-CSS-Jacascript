@@ -9,7 +9,7 @@
     <!--? Enlazamiento con CSS-->
     <link rel="stylesheet" href="style.css" />
     <!--? Enlazamiento a Javascript-->
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
   </head>
   <body>
     <header>
@@ -103,7 +103,7 @@
       >Configuraciones de visul studio code</a
     >
     <footer>
-      <form action="">
+      <form id="formulario">
         <h2>Información sobre el curso</h2>
         <label for="nombre">Nombre del interesado</label><br>
           <input
@@ -141,16 +141,18 @@
         name="comentarios"
         class="inputs" 
         type="text" 
-        placeholder="Dejar comentarios"></textarea>/>
+        placeholder="Dejar comentarios"></textarea>
         <br/>
+        <!--? Vamos con javascriot -->
         <input id="inputsbutton" type="submit" value="Enviar" />
         <!-- <input id="inputsbutton" type="submit" value="Enviar"style="margin:15px; height:30px; background-color:rgb(122, 122, 226); cursor: pointer; width:80%;">   -->
+        <p id="mensajeBtn">Presione el botón para que su mensaje sea enviando</p>
       </form>
       <a
         id="afooter"
         href="https://www.udemy.com/course/desarrollo-web-con-html-css-y-javascript-desde-cero/learn/lecture/51204599#overview"
-        >Página</a
-      >
+        >Página</a>
     </footer>
   </body>
 </html>
+

@@ -418,3 +418,19 @@ img{
 img:hover{
   animation: none;;
 }
+/*TODO  Configuraciones para mi javaScript */
+@keyframes mensaje {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+  
+}
+.enviado {
+  animation: mensaje 3s ease 3;
+}

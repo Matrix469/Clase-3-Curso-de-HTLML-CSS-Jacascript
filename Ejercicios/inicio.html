@@ -11,7 +11,7 @@
 
         <!--?Enlaces para css y js-->
         <link rel="stylesheet"  href="style.css">
-        <script src="javascript.js"></script>
+        <script src="javascript.js" defer></script>
         <!-- <style> body{ background-color: bisque;}</style> -->
     </head>
     <header>
@@ -147,7 +147,7 @@
     </body>
 <footer>
 <h2 id="formulario">Formulario de contacto</h2>
-    <form >
+    <form id="formulario1">
     <fieldset id="fieldset1">
         <legend><strong>Información principal</strong></legend> <br>
         <label for="name">Nombre</label><br>
@@ -170,11 +170,17 @@
                placeholder="Ej: 555-123-4567"
                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               ><br>
-
-        <button id="buttonC" type="submit">
-            Enviar</button>
-    </fieldset>
+    
+      <dialog id="dialog">
+        <h1>Dato curioso</h1>
+        <p>Sigo trabajando y practicando sobre mi</p>
+        <button id="hide">Cerrar modal</button>
+       </dialog>
+              <button id="buttonC" type="button">Enviar</button>
+            <p id="MenBtn">Precione el boton para que su información sea enviada</p>
+    
+    
+        </fieldset>
     </form>
-       </footer>
-
+       </footer>     
 </html>
